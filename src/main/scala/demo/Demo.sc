@@ -8,4 +8,13 @@ val lstStr = List("Hello" , "World")
 
 print(lst.sum , sumString (lstStr))
 
-trait combine()
+//trait combine()
+
+def foo:Runnable = {
+  object Runner extends Runnable {
+
+    def run :Unit =     print("Hello")
+  }
+  Runner
+}
+foo.run()
